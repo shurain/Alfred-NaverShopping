@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>navershopping.shurain.net</string>
+	<key>connections</key>
+	<dict>
+		<key>0B6B0441-3A70-4C43-964A-AC6F39928EF5</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>740D4F4C-6DCF-46A1-AFF1-262D1F6840AE</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>shurain</string>
+	<key>description</key>
+	<string>Naver Shopping</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Naver Shopping</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>keyword</key>
+				<string>nvs</string>
+				<key>script</key>
+				<string># -*- coding: &lt;utf-8&gt; -*-
+from shop import shoplist
+
+print(shoplist('{query}'))</string>
+				<key>type</key>
+				<integer>3</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>0B6B0441-3A70-4C43-964A-AC6F39928EF5</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>plusspaces</key>
+				<false/>
+				<key>url</key>
+				<string>{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>740D4F4C-6DCF-46A1-AFF1-262D1F6840AE</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>0B6B0441-3A70-4C43-964A-AC6F39928EF5</key>
+		<dict>
+			<key>ypos</key>
+			<real>130</real>
+		</dict>
+		<key>740D4F4C-6DCF-46A1-AFF1-262D1F6840AE</key>
+		<dict>
+			<key>ypos</key>
+			<real>130</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>https://twitter.com/shurain_</string>
+</dict>
+</plist>
